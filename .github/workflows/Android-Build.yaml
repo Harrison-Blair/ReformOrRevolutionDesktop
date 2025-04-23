@@ -26,10 +26,14 @@ jobs:
       uses: actions/setup-node@v3.9.1
       with:
         node-version: '18'
-        cahe: 'npm'
+        cache: 'npm'
 
     - name: Install Dependencies
       run: npm i
 
+    - name: Build Application
+      run: |
+        cd android
+        ./gradlew build
     
     
