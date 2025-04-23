@@ -39,5 +39,4 @@ jobs:
 
       - name: IOS Build
         run: |
-          cd ios
-          xcodebuild 
+          npm run ios
